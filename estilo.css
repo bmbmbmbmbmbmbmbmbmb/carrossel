@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    background: rgb(190, 175, 212);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(169, 216, 224);
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards linear;
+}
+
+.imagem{
+
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgb(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1em;
+}
+
+@keyframes rotate360{
+     from{
+        transform: rotateY(0deg);
+     }
+
+     to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+
+    background-image: url(https://www.stockvault.net/data/2010/10/28/115637/preview16.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+
+    background-image: url(https://www.stockvault.net/data/2011/02/06/117455/thumb16.jpg);
+    transform:rotateY(40deg) translateZ(430px) ;
+}
+
+
+.imagem:nth-child(3){
+
+    background-image: url(https://www.stockvault.net/data/2010/10/05/115254/preview16.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+
+    background-image: url(https://www.stockvault.net/data/2012/09/26/136001/preview16.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+
+    background-image: url(https://www.stockvault.net/data/2011/04/21/122320/thumb16.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+
+    background-image: url(https://www.stockvault.net/data/2010/02/19/113103/preview16.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+
+    background-image: url(https://www.stockvault.net/data/2014/12/08/165855/thumb16.jpg); 
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+
+    background-image: url(https://www.stockvault.net/data/2008/01/29/104333/thumb16.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+
+    background-image: url(https://www.stockvault.net/data/2011/03/19/118933/preview16.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
